@@ -3,6 +3,7 @@ import CartContext from "./cart-context";
 
 const CartProvider = (props) => {
   const [items, updateItems] = useState([]);
+  
   const addItemToCartHandler = (item) => {
     updateItems([...items, item])
     
